@@ -1,4 +1,4 @@
 #!/bin/bash
 
-ping 1 www.google.com > redirect.log
+ping www.google.com > redirect.log
 
