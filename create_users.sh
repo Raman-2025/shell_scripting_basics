@@ -1,7 +1,10 @@
 #!/bin/bash
 
+# script will exit or stop when error or fail of any command
+set -e
+
 # script should be excute with sudo/root access.
-if [[ $(UID) -ne 0 ]]
+if [[ $UID -ne 0 ]]
 then
 	echo " Please run with sudo or root"
 	exit 1
@@ -20,8 +23,8 @@ user_name="${1}"
   # echo $user_name
 
 # in case of more than one argument, store it as account comments
-SHIFT
-comment=""${@}
+shift
+comment="${@} "
   # echo $comment
 
 # create a password
@@ -39,7 +42,7 @@ then
 fi
 
 # set the password for the user. 
-echo $password | passwd --stdin $user_name
+echo "$user_name:$password " | chpasswd
 
 # check if password  is successfully set or not
 if [[ $? -ne 0 ]]
