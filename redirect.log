@@ -1,1 +1,12 @@
-Bad parameter www.google.com.
+PING www.google.com (142.251.154.119) 56(84) bytes of data.
+64 bytes from 142.251.154.119: icmp_seq=1 ttl=117 time=1.62 ms
+64 bytes from 142.251.154.119: icmp_seq=2 ttl=117 time=1.76 ms
+64 bytes from 142.251.154.119: icmp_seq=3 ttl=117 time=1.91 ms
+64 bytes from 142.251.154.119: icmp_seq=4 ttl=117 time=1.43 ms
+64 bytes from 142.251.154.119: icmp_seq=5 ttl=117 time=2.09 ms
+64 bytes from 142.251.154.119: icmp_seq=6 ttl=117 time=1.54 ms
+64 bytes from 142.251.154.119: icmp_seq=7 ttl=117 time=1.58 ms
+
+--- www.google.com ping statistics ---
+7 packets transmitted, 7 received, 0% packet loss, time 6011ms
+rtt min/avg/max/mdev = 1.425/1.703/2.093/0.215 ms

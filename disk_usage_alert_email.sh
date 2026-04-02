@@ -2,9 +2,9 @@
 
 #monitoring free file system space disk 
 
-fu=$(df -h | grep "sda2" | awk '{print $5'} | tr -d % )
+fu=$(df -h | grep "root" | awk '{print $5'} | tr -d % )
 
-if [[ $fu -ge 80 ]]
+if [[ $fu -ge 40 ]]
 then
 	echo "WARNING , disk space is low .... "
 else
